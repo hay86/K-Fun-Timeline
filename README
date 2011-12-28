@@ -1,0 +1,52 @@
+==============
+K Fun Timeline
+==============
+
+Created by Kaifeng Xu. See my personal website for more info: http://kfun.me
+
+============================================================================
+
+To run this example, you should set up a web server on local machine. I will
+recommend you to use XAMPP (http://www.apachefriends.org) which is a suit of
+light-weight and easy-to-install web servers. Then put this directory under 
+C:/xampp/htdocs, and simply visit http://localhost/K-Fun-Timeline/.
+
+============================================================================
+
+Note that if you want to save bandwidth, you could change the following code
+
+<script src="./js/thw.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.scrollTo-1.4.2-min.js"></script>
+
+to
+
+<script src=
+"http://deanoakley.com/wp-content/themes/deanoakley/js/thw.js"></script>
+<script src=
+"http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src=
+"http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js">
+</script>
+
+============================================================================
+
+Here is the file list:
+
+index.html								// Example entry
+README									// This readme
+js/thw.js								// Horizental scrolling using wheel
+js/render.js							// Render ./data/data.json
+js/jquery.min.js						// jQuery 1.7.1
+js/jquery.scrollTo-1.4.2-min.js			// jQuery plugin on scrolling
+css/index.css							// Style file
+img/TechPulse.jpg						// Example picture
+data/data.json							// Example data
+
+============================================================================
+
+GPL license:
+http://www.gnu.org/licenses/gpl.html
+
+MIT license:
+http://www.opensource.org/licenses/mit-license.php
