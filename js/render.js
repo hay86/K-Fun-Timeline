@@ -27,7 +27,7 @@ var layout_tpl 	= ['triangle-border', 'triangle-border top'];
 $(document).ready(function(){
 	$.getJSON('./data/data.json', function(data){		// get json data
 		
-		var nav_html 	= '<ul>';
+		var nav_html 	= '';
 		var pin_html 	= '';
 		var bubble_html = ['', ''];
 		
@@ -75,8 +75,6 @@ $(document).ready(function(){
 			offset += margin_width / 2;
 		});
 		
-		nav_html += '</ul>';
-		
 		/* adjust new width */
 		var width = offset + year_label_width * c2 +  item_label_width * (c3-0.5);
 		$('#timeline_1')	.css('width', width + "px");
@@ -84,7 +82,7 @@ $(document).ready(function(){
 		$('#timeline_2')	.css('width', width + "px");
 		
 		/* put innerHTML */
-		$("#nav")			.html(nav_html);
+		$("#nav ul")		.html(nav_html);
 		$('#timeline_pin')	.html(pin_html);
 		$('#timeline_1')	.html(bubble_html[0]);
 		$('#timeline_2')	.html(bubble_html[1]);

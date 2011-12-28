@@ -27,17 +27,21 @@
 	border-color: black;
 	border-width: 0px 2px;
 	background-color: white;
+	text-align: center;
+}
+
+.nav div {
+	margin-top: 75px;
 }
 
 .nav ul {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	margin-top: 150px;
+	margin-top: 75px;
 }
 
 .nav ul li {
-	text-align: center;
 	list-style: none outside none;
 	line-height: 35px;
 }
